@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color:#222f3e;
+}
+.main{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    width:100%;
+    height:100vh;
+    font-family: 'Mate SC', serif;
+}
+.heading h1{
+    color:#ecf0f1;
+    text-shadow:1.5px 1.5px 2px #e67e22;
+}
+.questions{
+    max-width:700px;
+    padding:1rem;
+    color:black;
+    margin-top: 2rem;
+    background-color:#f5f6fa;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+.question-title{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.buttons{
+    background:transparent;
+    border:transparent;
+}
+.fa{
+    background:transparent;
+    border:1px solid #e67e22;
+    padding:0.2rem;
+    font-size:1rem;
+    color:black;
+    display: block;
+    cursor:pointer;
+    border-radius: 3px;
+}
+.minus{
+    display:none;
+}
+.question-ans{
+    border-top: 2px solid #e67e22;
+    visibility: hidden;
+    height:0;
+    overflow:hidden;
+    transition:all 0.1s;
+}
+.show-ans .question-ans{
+    visibility: visible;
+    height:auto;
+    padding:1rem 0rem;
+
+}
+.show-ans .minus{
+    display:block;
+}
+.show-ans .plus{
+    display: none;
+}

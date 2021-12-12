@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #031321;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button1,
+.button2,
+.button3 {
+    width: 200px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1rem;
+
+}
+
+.button1 {
+    color: #00ffff;
+    border: 2px solid #00ffff;
+}
+
+.button2 {
+    color: #ff0000;
+    border: 2px solid #ff0000;
+
+}
+
+.button3 {
+    color: #1eff00;
+    border: 2px solid #1eff00;
+}
+
+.button1:hover {
+    background-color: #00ffff;
+    color: #00292e;
+    box-shadow: 0px 0px 10px #00ffff, 0px 0px 30px #00ffff, 0px 0px 60px #00ffff, 0px 0px 100px #00ffff;
+}
+
+.button2:hover {
+    background-color: #ff0000;
+    color: #00292e;
+    box-shadow: 0px 0px 10px #ff0000, 0px 0px 30px #ff0000, 0px 0px 60px #ff0000, 0px 0px 100px #ff0000;
+}
+
+.button3:hover {
+    background-color: #1eff00;
+    color: #00292e;
+    box-shadow: 0px 0px 10px #1eff00, 0px 0px 30px #1eff00, 0px 0px 60px #1eff00, 0px 0px 100px #1eff00;
+}

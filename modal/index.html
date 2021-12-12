@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Art Gallery</title>
+</head>
+
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <h1>The Gallery Art and Design</h1>
+            <img src="art.jpg" alt="Art Gallery">
+            <a onClick='modal()' class="display">Show Description</a>
+        </div>
+    </div>
+    <div class="modal">
+        <h1>Art of a Lady Girl</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum quae, distinctio itaque rem adipisci
+            labore corrupti voluptatibus exercitationem repellat dolorum id autem laborum temporibus amet quidem? Velit,
+            incidunt iusto.</p>
+        <h1><span>Price: </span> $100</h1>
+        <a class="close">Close</a>
+    </div>
+    </div>
+    <script>
+        const blu = document.querySelector('#blur');
+        const clos = document.querySelector('.close');
+
+        function modal() {
+            blu.classList.toggle('art');
+        }
+        clos.addEventListener('click', () => {
+            blu.classList.remove('art');
+        })
+    </script>
+</body>
+
+</html>

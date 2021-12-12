@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color:#050b1d;
+    font-family: 'Odibee Sans', cursive;}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#fff;
+    max-width: 1200px;
+    margin:auto;
+    height: 100vh;
+    padding:2rem;
+}
+.logo{
+    padding:1rem;
+    border-radius:30px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.04),
+    5px 5px 5px rgba(0,0,0,0.1),
+    inset -4px -4px 5px rgba(255,255,255,0.08),
+    inset 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+.menu , .social-icons{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.menu li ,.social-icons li{
+    padding:0.5rem 1rem;
+    margin: 0rem 0.5rem;
+    background-color:#050b1d;
+    box-shadow: -5px -5px 5px rgba(255,255,255,0.1),
+                5px 5px 5px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s;
+    border-radius: 10px;
+
+     }
+.menu li a,.social-icons li a{
+display: inline-block;
+color:#fff;
+font-size:1.2rem;
+
+     }
+.menu li:hover>a ,span{
+    color:#d35400;
+}
+     .menu li:hover ,.social-icons li:hover{
+        box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.04),
+                    5px 5px 5px rgba(0,0,0,0.1),
+                    inset -4px -4px 5px rgba(255,255,255,0.08),
+                    inset 5px 5px 5px rgba(0,0,0,0.3);
+     }
+.social-icons li:nth-child(1):hover a{
+    color:#40739e;
+}
+.social-icons li:nth-child(2):hover a{
+    color:#192a56;
+}
+.social-icons li:nth-child(3):hover a{
+    color:#fc5c65;
+}
+.social-icons li:nth-child(4):hover a{
+    color:#FF0000;
+}

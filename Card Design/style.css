@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dcdde1;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin:auto;
+}
+.card{
+    width:300px;
+    height:400px;
+    padding:1rem;
+    position:relative;
+    margin:1rem;
+    border-radius: 10px;
+    box-shadow: -5px -5px 4px rgba(255,255,255,0.8),
+                5px 5px 4px rgba(0,0,0,0.1),
+                inset 5px 5px 7px rgba(255,255,255,0.8),
+                inset -5px -5px 4px rgba(0,0,0,0.1);
+}
+.inner-card{
+    position:relative;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    z-index:10;
+    box-shadow: -5px -5px 4px rgba(255,255,255,0.8),
+                5px 5px 4px rgba(0,0,0,0.1),
+                inset -5px -5px 7px rgba(255,255,255,0.8),
+                inset 5px 5px 4px rgba(0,0,0,0.1);
+}
+.inner-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+.content {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.content span{
+    color:#c23616;
+}
+.content .social-icons .fa{
+    width:35px;
+    line-height:35px;
+    box-shadow: -2px -2px 3px rgba(255,255,255,0.8),
+                2px 2px 3px rgba(0,0,0,0.1),
+                inset 2px 2px 3px rgba(255,255,255,0.8),
+                inset -2px -2px 3px rgba(0,0,0,0.1);
+display: inline-block;
+text-align:center;
+margin: 0.5rem 0.2rem;
+color:#c23616;
+border-radius: 5px;
+transition: all 0.5s;
+}
+.content .social-icons .fa:hover{
+    color:#86210a;
+    box-shadow: -5px -5px 4px rgba(255,255,255,0.5),
+                5px 5px 4px rgba(0,0,0,0.1),
+                inset -5px -5px 7px rgba(255,255,255,0.5),
+                inset 5px 5px 4px rgba(0,0,0,0.1);
+}
+.card:hover .inner-card img{
+    transition:all 0.4s;
+    transform: translateY(-120px);
+}
+.card:hover .content{
+    opacity: 1;
+    visibility: visible;
+}

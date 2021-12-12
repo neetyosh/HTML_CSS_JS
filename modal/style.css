@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#d63031;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.content{
+    position:relative;
+    max-width:700px;
+    height: auto;
+    padding: 1rem;
+}
+.content img{
+    width: 100%;
+    height: auto;
+}
+.content h1 ,h1{
+  font-family: 'Kaushan Script', cursive;
+  color:#f5f6fa;
+  padding:0.5rem;
+}
+.content a ,a{
+    display:inline-block;
+    padding: 0.5rem 1rem;
+    color:#000000;
+    font-family: 'Roboto', sans-serif;
+    background-color:#FFC312;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor:pointer;
+}
+.container#blur.art{
+filter: blur(20px);
+pointer-events: none;
+user-select: none;
+}
+.modal{
+    position:fixed;
+    top:30%;
+    left:50%;
+    max-width:500px;
+    height:auto;
+    background-color:#fff;
+    padding: 1rem;
+    transform: translate(-50%,-50%);
+    opacity:0;
+    visibility:hidden;
+    overflow:hidden;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+.modal h1{
+    font-family: 'Kaushan Script', cursive;
+    color:#000000;
+    padding:0.5rem;
+  }
+  .modal p{
+      padding:1rem 0.2rem;
+  }
+  .container#blur.art + .modal{
+    top:40%;
+    opacity:1;
+    visibility:visible;
+  }

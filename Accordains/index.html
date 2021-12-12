@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Accordains</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>Frequently Asked Questinos</h1>
+        </div>
+        <div class="questions">
+            <div class="question-title">
+                <h2>What is coding ?</h2>
+                <button class="buttons">
+                    <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                    <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                </button>
+            </div>
+            <div class="question-ans">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita beatae commodi sed omnis
+                    consectetur. Nobis quis eligendi cupiditate ad fugit sed. Mollitia totam voluptatem eum deleniti
+                    facere error delectus voluptatum?</p>
+            </div>
+        </div>
+        <div class="questions">
+            <div class="question-title">
+                <h2>What is Youtube ?</h2>
+                <button class="buttons">
+                    <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                    <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                </button>
+            </div>
+            <div class="question-ans">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita beatae commodi sed omnis
+                    consectetur. Nobis quis eligendi cupiditate ad fugit sed. Mollitia totam voluptatem eum deleniti
+                    facere error delectus voluptatum?</p>
+            </div>
+        </div>
+        <div class="questions">
+            <div class="question-title">
+                <h2>What is Network ?</h2>
+                <button class="buttons">
+                    <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                    <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                </button>
+            </div>
+            <div class="question-ans">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita beatae commodi sed omnis
+                    consectetur. Nobis quis eligendi cupiditate ad fugit sed. Mollitia totam voluptatem eum deleniti
+                    facere error delectus voluptatum?</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const ques = document.querySelectorAll('.questions');
+        ques.forEach(function (singleque) {
+            const btn = singleque.querySelector('.buttons')
+            btn.addEventListener('click', function () {
+                ques.forEach(function (item) {
+                    if (item !== singleque) {
+                        item.classList.remove('show-ans')
+                    }
+                })
+                singleque.classList.toggle('show-ans');
+            })
+        })
+    </script>
+</body>
+
+</html>
